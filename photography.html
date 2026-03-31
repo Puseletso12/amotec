@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photography</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="shortcut icon"
+      href="assets/AMOTEC PREMIUM LOGO I.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav id="navbar">
+      <div class="nav-inner">
+        <a href="#" class="nav-logo">
+          <img src="assets/AMOTEC PREMIUM LOGO II.png" alt="Amotec Solutions" />
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">About</a></li>
+          <li><a href="index.html">Services</a></li>
+          <li><a href="index.html">Portfolio</a></li>
+          <li><a href="index.html">Why Us</a></li>
+          <li><a href="index.html">Contact</a></li>
+          <li><a href="index.html" class="btn-nav">Start a Project</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="btn-nav-mobile">Start a Project</a>
+      </div>
+    </nav>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
+      <div class="container">
+        <div class="section-header reveal">
+          <!-- <p class="section-label"><span class="navy-text">Portfolio</span></p> -->
+          <h2 class="section-title"> <span class="navy-text">Photography</span></h2>
+        </div>
+        <div class="filter-bar reveal">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="Video Production">
+            Video Production
+          </button>
+          <button class="filter-btn" data-filter="Event Coverage">
+            Event Coverage
+          </button>
+          <button class="filter-btn" data-filter="Corporate Media">
+            Corporate Media
+          </button>
+          <button class="filter-btn" data-filter="Social Media">
+            Social Media
+          </button>
+          <button class="filter-btn" data-filter="Photography">
+            Photography
+          </button>
+          <button class="filter-btn" data-filter="Livestream">
+            Livestream
+          </button>
+        </div> 
+        <div class="portfolio-grid">
+          <div class="port-item reveal" data-category="Photography">
+            <img
+              src="assets/9V7A7467.jpg"
+              alt="Cinematic Portrait Session"
+              loading="lazy"
+            />
+            <div class="port-overlay">
+              <!-- <span>Photography</span> -->
+              <h3>Photography</h3>
+              <a href="photography.html" class="view-link">View Photography</a>
+            </div>
+          </div>
+          <div class="port-item reveal" data-category="Corporate Media">
+            <img
+              src="assets/IMG_2215.jpg"
+              alt="Corporate Leadership Feature"
+              loading="lazy"
+            />
+            <div class="port-overlay">
+              <h3>Videography</h3>
+              <!-- <span>Corporate Media</span> -->
+               <a href="videography.html" class="view-link">View Videography</a>
+            </div>
+          </div>
+          <div class="port-item reveal" data-category="Event Coverage">
+            <img
+              src="assets/_MG_8628.jpg"
+              alt="Sports Action Coverage"
+              loading="lazy"
+            />
+            <div class="port-overlay">
+              <h3>Graphic Design</h3>
+              <!-- <span></span> -->
+              <a href="graphic-design.html" class="view-link">View Graphic Designs</a>
+            </div>
+          </div>
+          <div class="port-item reveal" data-category="Livestream">
+            <img
+              src="assets/IMG_7061.jpg"
+              alt="Football Tournament Highlights"
+              loading="lazy"
+            />
+            <div class="port-overlay">
+              <h3>Football Tournament Highlights</h3>
+              <span>Livestream</span>
+            </div>
+          </div>
+          <div class="port-item reveal" data-category="Social Media">
+            <img
+              src="assets/IMG_2570.jpg"
+              alt="Social Media Content Creation"
+              loading="lazy"
+            />
+            <div class="port-overlay">
+              <h3>Social Media Content Creation</h3>
+              <span>Social Media</span>
+            </div>
+          </div>
+          <div class="port-item reveal" data-category="Event Coverage">
+            <img
+              src="assets/IMG_2581.jpg"
+              alt="Government Press Coverage"
+              loading="lazy"
+            />
+            <div class="port-overlay">
+              <h3>Government Press Coverage</h3>
+              <span>Event Coverage</span>
+            </div>
+          </div>
+          <div class="port-item reveal" data-category="Corporate Media">
+            <img
+              src="assets/IMG_5248.jpg"
+              alt="VIP Gala Documentation"
+              loading="lazy"
+            />
+            <div class="port-overlay">
+              <h3>VIP Gala Documentation</h3>
+              <span>Corporate Media</span>
+            </div>
+          </div>
+          <div class="port-item reveal" data-category="Video Production">
+            <img
+              src="assets/IMG_5228.jpeg"
+              alt="Community Outreach Campaign"
+              loading="lazy"
+            />
+            <div class="port-overlay">
+              <h3>Community Outreach Campaign</h3>
+              <span>Video Production</span>
+            </div>
+          </div>
+          <div class="port-item reveal" data-category="Photography">
+            <img
+              src="assets/IMG_0766.jpg"
+              alt="Interior &amp; Property Showcase"
+              loading="lazy"
+            />
+            <div class="port-overlay">
+              <h3>Interior &amp; Property Showcase</h3>
+              <span>Photography</span>
+            </div>
+          </div>
+          <div class="port-item reveal" data-category="Video Production">
+            <img
+              src="assets/20240114_141807.jpg"
+              alt="Cultural Documentary Series"
+              loading="lazy"
+            />
+            <div class="port-overlay">
+              <h3>Cultural Documentary Series</h3>
+              <span>Video Production</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Get In Touch</p>
+          <h2 class="section-title">
+            Start Your <span class="navy-text">Project</span>
+          </h2>
+        </div>
+        <div class="contact-layout">
+          <!-- Left: contact details -->
+          <div class="contact-details reveal">
+            <p class="contact-intro">
+              Ready to tell your story? Reach out and let's build something
+              powerful together.
+            </p>
+
+            <div class="contact-info-list">
+              <a href="mailto:amotec@kgarahara.co.za" class="ci-item ci-link">
+                <div class="ci-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect width="20" height="16" x="2" y="4" rx="2" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="ci-label">Email</p>
+                  <p class="ci-value">amotec@kgarahara.co.za</p>
+                </div>
+              </a>
+
+              <div class="ci-item">
+                <div class="ci-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="ci-label">Polokwane</p>
+                  <p class="ci-value">
+                    67 Schalk Drive, Bendor Park<br />Polokwane, 0699
+                  </p>
+                </div>
+              </div>
+
+              <div class="ci-item">
+                <div class="ci-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="ci-label">Pretoria</p>
+                  <p class="ci-value">
+                    81 Riverbells Street, Rietvlei Ridge<br />Country Estate,
+                    Centurion, 0157
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <p class="ci-label" style="margin-bottom: 14px">Follow Us</p>
+            <div class="social-row">
+              <a
+                href=" https://www.facebook.com/share/18rPwizk9w/"
+                class="soc-icon"
+                aria-label="Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.instagram.com/amotec_solutions?igsh=eGd1dnViMDJ6NmNj"
+                class="soc-icon"
+                aria-label="Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect width="20" height="20" x="2" y="2" rx="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                </svg>
+              </a>
+              <!-- <a
+                href="#"
+                class="soc-icon"
+                aria-label="X / Twitter"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                  />
+                </svg>
+              </a> -->
+              <!-- <a
+                href="#"
+                class="soc-icon"
+                aria-label="LinkedIn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"
+                  />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </a> -->
+              <!-- <a
+                href="#"
+                class="soc-icon"
+                aria-label="YouTube"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"
+                  />
+                  <polygon
+                    points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"
+                    fill="white"
+                  />
+                </svg>
+              </a> -->
+              <a
+                href="https://www.tiktok.com/@amotec.solutions?_r=1&_t=ZS-94Rng70BopU"
+                class="soc-icon"
+                aria-label="TikTok"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: form -->
+          <form class="contact-form reveal" id="contact-form" novalidate>
+            <div class="form-row">
+              <input
+                type="text"
+                placeholder="Your Name"
+                required
+                maxlength="100"
+              />
+              <input
+                type="email"
+                placeholder="Email Address"
+                required
+                maxlength="255"
+              />
+            </div>
+            <input
+              type="text"
+              placeholder="Company Name"
+              maxlength="100"
+              class="form-field"
+            />
+            <select class="form-field">
+              <option value="">Select a Service</option>
+              <option>Photography</option>
+              <option>Videography</option>
+              <option>Video Production</option>
+              <option>Livestreaming</option>
+              <option>Podcast Production</option>
+              <option>Social Media Marketing</option>
+              <option>Social Media Management</option>
+              <option>Marketing &amp; Advertising</option>
+              <option>Public Relations</option>
+              <option>Graphic Design</option>
+              <option>Marketing Consultancy</option>
+            </select>
+            <textarea
+              class="form-field"
+              placeholder="Tell us about your project…"
+              rows="5"
+              required
+              maxlength="1000"
+            ></textarea>
+            <div class="form-actions">
+              <button type="submit" class="btn-navy">
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"
+                  />
+                  <path d="m21.854 2.147-10.94 10.939" />
+                </svg>
+                Start Your Project
+              </button>
+              <a
+                href="https://wa.me/27837299933"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-outline-dark"
+              >
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+                </svg>
+                WhatsApp Us
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <img
+              src="assets/AMOTEC PREMIUM LOGO I.png"
+              alt="Amotec Solutions"
+            />
+            <p>Capturing Stories. Amplifying Brands.</p>
+            <div class="social-row" style="margin-top: 20px">
+              <a
+                href=" https://www.facebook.com/share/18rPwizk9w/
+
+"
+                class="soc-icon dark"
+                aria-label="Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.instagram.com/amotec_solutions?igsh=eGd1dnViMDJ6NmNj"
+                class="soc-icon dark"
+                aria-label="Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect width="20" height="20" x="2" y="2" rx="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                </svg>
+              </a>
+              <a
+                href="https://www.tiktok.com/@amotec.solutions?_r=1&_t=ZS-94Rng70BopU"
+                class="soc-icon dark"
+                aria-label="TikTok"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-heading">Quick Links</h4>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#why-us">Why Us</a>
+            <a href="#contact">Contact</a>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-heading">Contact</h4>
+            <a href="mailto:amotec@kgarahara.co.za" class="footer-contact-item">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect width="20" height="16" x="2" y="4" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+              amotec@kgarahara.co.za
+            </a>
+            <div class="footer-contact-item">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <span>67 Schalk Drive, Bendor Park, Polokwane, 0699</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <span
+                >81 Riverbells Street, Rietvlei Ridge, Centurion, Pretoria,
+                0157</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          &copy; 2026 Amotec Solutions. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
