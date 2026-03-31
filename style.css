@@ -158,6 +158,31 @@ ul {
   transform: translateY(-1px);
 }
 
+.btn-gold {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 28px;
+  background: var(--gold);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  font-family: var(--ff-accent);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.07em;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    box-shadow 0.3s,
+    transform 0.2s;
+}
+.btn-gold:hover {
+  background: var(--gold-dark);
+  box-shadow: 0 4px 20px var(--gold-glow);
+  transform: translateY(-1px);
+}
+
 .btn-outline {
   display: inline-flex;
   align-items: center;
@@ -663,31 +688,57 @@ nav.scrolled .hamburger span {
 .port-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.52);
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(0, 0, 0, 0.3) 50%,
+    transparent 100%
+  );
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  text-align: center;
-  transition: background 0.35s;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 24px 20px;
+  text-align: left;
+  transform: translateY(12px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
 .port-item:hover .port-overlay {
+  opacity: 1;
+  transform: translateY(0);
   background: rgba(0, 0, 0, 0.28);
 }
 .port-overlay h3 {
   font-family: var(--ff-accent);
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0.04em;
   color: #fff;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 .port-overlay span {
   font-family: var(--ff-accent);
-  font-size: 12px;
-  color: var(--red);
-  letter-spacing: 0.08em;
+  font-size: 11px;
+  color: var(--gold);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  display: block;
+}
+.port-overlay .view-link {
+  font-family: var(--ff-accent);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding-bottom: 2px;
+  transition: border-color 0.25s;
+}
+.port-overlay .view-link:hover {
+  border-color: var(--gold);
+  color: var((--gold));
 }
 
 /* ============================================================
@@ -757,7 +808,7 @@ nav.scrolled .hamburger span {
 .why-card svg {
   width: 30px;
   height: 30px;
-  color: var(--red);
+  color: var(--gold);
   flex-shrink: 0;
   margin-top: 2px;
 }
@@ -792,8 +843,8 @@ nav.scrolled .hamburger span {
   align-items: center;
   gap: 8px;
   padding: 6px 16px;
-  border: 1px solid rgba(224, 26, 26, 0.35);
-  background: rgba(224, 26, 26, 0.1);
+  border: 1px solid #aaa;
+  background: rgba(233, 228, 228, 0.529);
   color: var(--red);
   border-radius: 50px;
   font-family: var(--ff-accent);
@@ -914,7 +965,7 @@ nav.scrolled .hamburger span {
   transition: color 0.25s;
 }
 .ci-link:hover {
-  color: var(--red);
+  color: var(--dark);
 }
 .ci-icon {
   width: 42px;
@@ -930,7 +981,7 @@ nav.scrolled .hamburger span {
 .ci-icon svg {
   width: 18px;
   height: 18px;
-  color: var(--red);
+  color: var(--dark);
 }
 .ci-label {
   font-family: var(--ff-accent);
@@ -975,9 +1026,9 @@ nav.scrolled .hamburger span {
   height: 16px;
 }
 .soc-icon:hover {
-  border-color: var(--red);
+  border-color: var(--navy);
   color: var(--red);
-  background: rgba(224, 26, 26, 0.05);
+  background: var(-);
   transform: translateY(-2px);
 }
 
@@ -1032,7 +1083,7 @@ nav.scrolled .hamburger span {
 .contact-form select:focus,
 .contact-form textarea:focus {
   border-color: var(--navy-dark);
-  box-shadow: 0 0 0 3px rgba(224, 26, 26, 0.08);
+  box-shadow: 0 0 0 3px rgba(181, 176, 176, 0.08);
 }
 .contact-form textarea {
   resize: none;
@@ -1043,7 +1094,7 @@ nav.scrolled .hamburger span {
   display: flex;
   gap: 12px;
 }
-.form-actions .btn-red {
+.form-actions .btn-navy {
   flex: 1;
   justify-content: center;
 }

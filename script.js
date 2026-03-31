@@ -104,7 +104,7 @@ genInput.addEventListener('keydown', e => {
 /* ── Contact form ───────────────────────────────────────────── */
 document.getElementById('contact-form').addEventListener('submit', e => {
   e.preventDefault();
-  const submitBtn = e.target.querySelector('.btn-red[type="submit"]');
+  const submitBtn = e.target.querySelector('.btn-navy[type="submit"]');
   const original  = submitBtn.innerHTML;
 
   submitBtn.textContent = '✓ Message Sent!';
